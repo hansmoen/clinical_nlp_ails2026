@@ -1,0 +1,106 @@
+﻿"case_id","day","note_order","note_title","author","note_text"
+"1","-7","1","Outpatient Clinic Evaluation","Pediatric Cardiologist","Previously healthy child referred after abnormal CXR.
+Parents report no CP, SOB, palpitations, syncope, or exercise limitation. Child active, normal development.
+
+Exam: well-appearing, no distress. Vitals WNL. HS normal, no murmur. Perfusion good, no HF signs.
+ECG: nonspecific repolarization changes.
+CXR: enlarged cardiac silhouette (left-sided prominence).
+Impression: incidental cardiomegaly + abnormal ECG → ?structural lesion (?cardiac mass).
+Plan: urgent TTE arranged. Family reassured; pt currently stable."
+"1","-5","2","Echocardiography Report","Cardiac Imaging Specialist / Radiologist","TTE shows well-defined echogenic mass in LV free wall. Homogeneous, intramyocardial, no cystic features.
+No inflow/outflow obstruction. LV systolic function preserved. No effusion.
+Impression: findings consistent w/ LV fibroma.
+Comment: currently asymptomatic but risk of arrhythmia / mechanical compromise long-term.
+Recommendation: CTS referral."
+"1","-4","3","Surgical Consultation","Cardiothoracic Surgeon","Child w/ incidental LV mass, likely fibroma. Asymptomatic but non-trivial risk of arrhythmias + future functional compromise.
+Discussed w/ parents: benign pathology, rationale for resection, operative approach (sternotomy, CPB, myocardial incision). Risks incl bleeding, infection, arrhythmia, rare need MCS.
+Plan: elective surgical excision. Family agreeable."
+"1","0","4","Admission (Cardiology)","Pediatric Cardiologist","No interval change. Remains asymptomatic.
+Vitals stable. CVS exam unchanged. Labs WNL.
+Assessment: fit for elective tumor resection.
+Plan: proceed to surgery tomorrow. Pre-op fasting + counseling done. Family understandably anxious but reassured."
+"1","0","5","Admission Nursing Note (Evening)","Pediatric Cardiac Nurse","Pt admitted w/ parents. Calm, cooperative. No distress.
+Obs: HR 88, BP 102/64, SpO₂ 99% RA, Temp 36.8
+Age-appropriate interaction. Parents mildly anxious → support provided.
+Prep:
+- fasting reinforced
+- IV access secured
+- labs already completed
+Pt settled overnight."
+"1","1","6","Preoperative Assessment","Cardiac Anesthesiologist","Pt stable. No anesthetic contraindications. Airway unremarkable.
+Cardiac lesion reviewed. Intraop risk considered manageable.
+Plan: GA + invasive monitoring. CPB planned. Close monitoring for arrhythmia + ventricular function."
+"1","1","7","Operative Note","Cardiothoracic Surgeon","Median sternotomy performed. CPB established uneventfully.
+Firm intramural mass identified in LV free wall. Myocardial incision performed.
+Tumor well circumscribed → excised completely. No infiltration seen.
+LV wall reconstructed carefully.
+Weaned from CPB w/ stable hemodynamics. No intraop arrhythmias."
+"1","1","8","ICU Admission Note","Pediatric Intensive Care Specialist","Arrived intubated + sedated post-op.
+Hemodynamically stable, minimal support required.
+Assessment: favorable early post-op course.
+Plan: wean ventilation + sedation. Continuous arrhythmia monitoring."
+"1","1","9","ICU Nursing Note (Post-op Evening)","Pediatric ICU Nurse","Received from OR intubated, sedated.
+Obs:
+- HR ~102 (sinus)
+- BP stable minimal support
+- SpO₂ 100% (ventilated)
+- UO adequate
+Chest drains minimal output. Wound clean/dry.
+Ongoing hemodynamic monitoring. Family updated. Pt stable."
+"1","2","10","ICU Progress Note","Pediatric Intensive Care Specialist","Steady overnight improvement. Extubated this morning.
+Maintaining sats on minimal support. Rhythm stable. ECG improved vs pre-op.
+No signs low output.
+Assessment: uncomplicated early recovery.
+Plan: continue monitoring → step-down likely if stable."
+"1","2","11","ICU Nursing Note (Morning)","Pediatric ICU Nurse","Extubated successfully.
+SpO₂ >97% low-flow O₂. Awake, responding appropriately though drowsy.
+Mild pain → analgesia given w/ effect.
+Parents present, updated, education provided re ICU care."
+"1","2","12","ICU Nursing Note (Evening)","Pediatric ICU Nurse","Stable throughout day.
+Sat out of bed w/ assistance. Tolerated oral fluids.
+Vitals stable. No arrhythmias. Wound clean. Resting overnight."
+"1","3","13","ICU Progress / Transfer Plan","Pediatric Intensive Care Specialist","Ongoing recovery. Stable CVS + respiratory status. Pain controlled.
+Plan: transfer to step-down unit."
+"1","3","14","Transfer Nursing Note","Pediatric Cardiac Nurse","Transferred ICU → step-down stable.
+On arrival:
+- alert, age-appropriate
+- breathing comfortably RA
+- mobilized to chair
+Dressings intact, no infection signs.
+Plan: gradual mobilization, monitor I/O, continue cardiac monitoring."
+"1","4","15","Ward Progress Note","Pediatric Cardiologist","Pt feels well, mild incisional discomfort only.
+Vitals stable. Wound clean. ECG improved vs pre-op.
+Assessment: expected recovery following tumor resection; electrical normalization noted.
+Plan: increase mobilization, repeat echo scheduled."
+"1","4","16","Ward Nursing Note (Morning)","Ward Nurse","Awake, interactive, good mood.
+Vitals stable. Pain 3/10 → oral analgesia given.
+Assisted w/ hygiene + mobilization. Ambulated short distance. Encouraged deep breathing."
+"1","4","17","Ward Nursing Note (Evening)","Ward Nurse","Uneventful day. Eating well. Active/playful.
+Parents involved in care. Wound clean/dry."
+"1","5","18","Echocardiography (Post-op)","Radiologist","No residual mass. LV function preserved. No wall motion abnormality.
+Impression: complete resection, no complications."
+"1","5","19","Ward Nursing Note","Ward Nurse","Continues to improve.
+Ambulating independently. Pain minimal.
+Engaging in normal activities. Parents satisfied w/ progress."
+"1","6","20","Multidisciplinary Review","Pediatric Cardiologist","Consistent improvement. ECG near normalization. Imaging confirms complete resection.
+Assessment: uncomplicated recovery.
+Plan: discharge planning."
+"1","6","21","Pre-Discharge Nursing Note","Ward Nurse","Fully mobile, eating/drinking well, no pain at rest.
+Education provided:
+- wound care
+- activity limits
+- warning signs (fever, redness, palpitations)
+Parents demonstrate good understanding."
+"1","7","22","Discharge Summary","Pediatric Cardiologist","Child admitted for elective LV fibroma resection.
+Tumor excised successfully. No intra/post-op complications.
+Rapid recovery, normalization of ECG changes.
+Discharge: stable, asymptomatic, ambulatory.
+Plan: cardiology follow-up 2–4 weeks."
+"1","7","23","Discharge Nursing Note","Ward Nurse","Discharged home w/ parents. Instructions reviewed + provided in writing.
+Child comfortable, in good spirits. No concerns at discharge."
+"1","28","24","Outpatient Intake","Cardiology Nurse","Pt returns for follow-up. Appears well, active.
+Parents report smooth recovery, no symptoms. Vitals WNL."
+"1","28","25","Follow-up Visit","Pediatric Cardiologist","Pt doing excellently. No symptoms. Normal activity level.
+ECG near normal. Echo: normal LV function, no recurrence.
+Assessment: excellent surgical outcome, no residual disease.
+Plan: routine long-term follow-up."

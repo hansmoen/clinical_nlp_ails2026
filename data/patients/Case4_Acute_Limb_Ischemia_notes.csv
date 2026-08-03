@@ -1,0 +1,75 @@
+﻿"case_id","day","note_order","note_title","author","note_text"
+"4","0","1","ED Triage","Triage Nurse","Sudden onset severe R leg pain. Pt alert, oriented, visibly distressed.
+
+Exam:
+- R limb pale, cool to touch
+
+Obs:
+- BP 150/85
+- HR 110 (irregular)
+- RR 18
+- Temp 36.8
+- SpO₂ 97% RA
+
+Impression: urgent vascular emergency suspected. Pt prioritized for MD review."
+"4","0","2","ED Physician Note","ED Physician","84M w/ acute R lower limb pain started ~2h prior. Associated numbness + weakness. No trauma.
+PMH: AF (no anticoag), HTN, HLD
+
+Exam:
+CV: irregularly irregular pulse
+RLL:
+- pale, cold
+- absent distal pulses
+- delayed cap refill
+- ↓ sensation
+- motor weakness
+
+Assessment: acute limb ischemia, likely embolic (AF-related).
+Plan:
+- IV heparin
+- analgesia
+- urgent CTA
+- vascular referral"
+"4","0","3","ED Nursing Note","ED Nurse","IV access secured. Heparin infusion commenced.
+Pain 8/10 → IV morphine given, good effect.
+R leg remains cold, pulseless. Ongoing monitoring."
+"4","0","4","CT Angiography Report","Radiologist","Findings:
+- acute occlusion R femoral artery
+- no significant underlying plaque
+
+Impression: embolic arterial occlusion."
+"4","0","5","Vascular Surgery Consultation","Vascular Surgeon","Acute limb ischemia (Rutherford IIa–IIb), embolic likely secondary to AF.
+Plan: urgent surgical embolectomy.
+Risks discussed incl limb loss, bleeding, procedural complications. Consent obtained."
+"4","0","6","Operative Note","Vascular Surgeon","R femoral artery exposed. Fogarty catheter passed proximally + distally.
+Fresh embolus retrieved.
+Immediate restoration of distal flow. Pulses palpable at end of procedure.
+No intraop complications."
+"4","1","7","ICU Postoperative Note","ICU Physician","Pt stable.
+
+R limb:
+- warm
+- normal coloration
+- pulses palpable
+
+No evidence compartment syndrome.
+Plan:
+- continue anticoagulation
+- monitor perfusion
+- analgesia"
+"4","1","8","ICU Nursing Note","ICU Nurse","Stable overnight.
+Limb well perfused, warm. Pain reduced (~3/10).
+No swelling, no concerns. Monitoring ongoing."
+"4","2","9","Cardiology Consultation","Cardiologist","Event consistent w/ embolism secondary to AF without adequate anticoagulation.
+Plan:
+- initiate DOAC
+- optimize rate control
+- counsel re stroke/embolism risk"
+"4","3","10","Surgical Ward Progress Note","Vascular Surgery Team","Recovering well.
+Ambulating w/ assistance. Limb perfusion normal. No neuro deficit.
+Plan: continue rehab + anticoagulation."
+"4","3","11","Physiotherapy Note","Physiotherapist","Mobilizing w/ assistance.
+Mild residual weakness R leg improving. Gait training initiated."
+"4","4","12","Ward Nursing Note","Ward Nurse","Pt comfortable.
+Ambulating short distances independently. No pain at rest. Independent w/ ADLs."
+"4","5","13","Discharge Summary","Vascular Surgeon","…"
