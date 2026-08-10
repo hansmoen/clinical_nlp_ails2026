@@ -1,4 +1,4 @@
-"CompLetter","DiagCode","DiagName","DiagDescription"
+"CompLetter","Code","Name","Description"
 "A","1.0","Activity Alteration","Change in or modification of energy used by the body"
 "A","1.1","Activity Intolerance","Incapacity to carry out physiological or psychological daily activities"
 "A","1.2","Activity Intolerance Risk","Increased chance of an incapacity to carry out physiological or psychological daily activities"
