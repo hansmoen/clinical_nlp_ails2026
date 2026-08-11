@@ -10,14 +10,14 @@ from src.utils import config
 
 
 def init_embedding_model(embedding_model_name, api_key):
-    embeddings = OpenAIEmbeddings(
+    emb_model = OpenAIEmbeddings(
         model=embedding_model_name,
         api_key=api_key,
     )
-    return embeddings
+    return emb_model
 
 
-def create_care_guideline_index(df, embeddings, save_path):
+def create_care_guideline_index(df, emb_model, save_path):
     texts = []
     metadatas = []
 
@@ -54,7 +54,7 @@ def create_care_guideline_index(df, embeddings, save_path):
 
     vector_store = FAISS.from_texts(
         texts=texts,
-        embedding=embeddings,
+        embedding=emb_model,
         metadatas=metadatas,
         distance_strategy=DistanceStrategy.MAX_INNER_PRODUCT,
     )
@@ -64,10 +64,10 @@ def create_care_guideline_index(df, embeddings, save_path):
     return vector_store
 
 
-def load_index(filepath, embeddings):
+def load_index(filepath, emb_model):
     vector_store = FAISS.load_local(
         filepath,
-        embeddings,
+        emb_model,
         allow_dangerous_deserialization=True,
     )
     return vector_store
@@ -95,7 +95,7 @@ if __name__ == "__main__":
     llm_name = "gpt-5.6-luna"
     ##############################################################
 
-    embeddings = init_embedding_model(embedding_model_name, api_key)
+    emb = init_embedding_model(embedding_model_name, api_key)
 
     # Read the care guideline file
     ccg_faiss_index_path = os.path.join(VEC_STORE_DIR, "ccg_faiss_index")
@@ -103,10 +103,10 @@ if __name__ == "__main__":
     ccg_df = pd.read_csv(os.path.join(data_resources_dir, "Care_guidelines.csv"), encoding="utf-8-sig")
 
     # Create Care Guideline vector store
-    #ccg_vector_store = create_care_guideline_index(df=ccg_df, embeddings=embeddings, save_path=ccg_faiss_index_path)
+    #create_care_guideline_index(df=ccg_df, emb_model=emb, save_path=ccg_faiss_index_path)
 
     # Load existing vector stores
-    ccg_vector_store = load_index(filepath=ccg_faiss_index_path, embeddings=embeddings)
+    ccg_vector_store = load_index(filepath=ccg_faiss_index_path, emb_model=emb)
 
 
     query = "The patient slipped and needed some help due to fractured toe"

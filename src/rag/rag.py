@@ -10,35 +10,65 @@ from textwrap import dedent
 # Vector stores
 # ============================================================
 
-def load_vector_stores(vec_store_dir, embeddings, allow_dangerous_deserialization=True):
+def load_vector_stores(vec_store_dir, emb_model, allow_dangerous_deserialization=True):
     vector_stores = {
         "ccc_diag": FAISS.load_local(
             os.path.join(vec_store_dir, "ccc_diag_faiss_index"),
-            embeddings,
+            emb_model,
             allow_dangerous_deserialization=allow_dangerous_deserialization,
         ),
 
         "ccc_interv": FAISS.load_local(
             os.path.join(vec_store_dir, "ccc_interv_faiss_index"),
-            embeddings,
+            emb_model,
             allow_dangerous_deserialization=allow_dangerous_deserialization,
         ),
 
         "ccg": FAISS.load_local(
             os.path.join(vec_store_dir, "ccg_faiss_index"),
-            embeddings,
+            emb_model,
             allow_dangerous_deserialization=allow_dangerous_deserialization,
         ),
 
         "icd10": FAISS.load_local(
             os.path.join(vec_store_dir, "icd10_faiss_index"),
-            embeddings,
+            emb_model,
             allow_dangerous_deserialization=allow_dangerous_deserialization,
         ),
 
-        "patient_notes": FAISS.load_local(
-            os.path.join(vec_store_dir, "pat_all_faiss_index"),
-            embeddings,
+        "pat1": FAISS.load_local(
+            os.path.join(vec_store_dir, "pat1_faiss_index"),
+            emb_model,
+            allow_dangerous_deserialization=allow_dangerous_deserialization,
+        ),
+
+        "pat2": FAISS.load_local(
+            os.path.join(vec_store_dir, "pat2_faiss_index"),
+            emb_model,
+            allow_dangerous_deserialization=allow_dangerous_deserialization,
+        ),
+
+        "pat3": FAISS.load_local(
+            os.path.join(vec_store_dir, "pat3_faiss_index"),
+            emb_model,
+            allow_dangerous_deserialization=allow_dangerous_deserialization,
+        ),
+
+        "pat4": FAISS.load_local(
+            os.path.join(vec_store_dir, "pat4_faiss_index"),
+            emb_model,
+            allow_dangerous_deserialization=allow_dangerous_deserialization,
+        ),
+
+        "pat5": FAISS.load_local(
+            os.path.join(vec_store_dir, "pat5_faiss_index"),
+            emb_model,
+            allow_dangerous_deserialization=allow_dangerous_deserialization,
+        ),
+
+        "pat6": FAISS.load_local(
+            os.path.join(vec_store_dir, "pat6_faiss_index"),
+            emb_model,
             allow_dangerous_deserialization=allow_dangerous_deserialization,
         ),
     }
@@ -327,14 +357,12 @@ def rag_q_and_a(
     # --------------------------------------------------------
     # History
     # --------------------------------------------------------
-
     if history is None:
         history = []
 
     # --------------------------------------------------------
     # Query rewriting
     # --------------------------------------------------------
-
     if rewrite_query_for_retrieval:
         rewritten_query = rewrite_query(query=query, llm=llm, history=history)
     else:
@@ -343,7 +371,6 @@ def rag_q_and_a(
     # --------------------------------------------------------
     # Retrieval
     # --------------------------------------------------------
-
     results = retrieve(
         query=rewritten_query,
         vector_store_names=vector_store_names,
@@ -354,13 +381,11 @@ def rag_q_and_a(
     # --------------------------------------------------------
     # Context
     # --------------------------------------------------------
-
     context = build_context(results)
 
     # --------------------------------------------------------
     # Answer
     # --------------------------------------------------------
-
     answer = generate_answer(
         query=query,
         context=context,
@@ -397,15 +422,13 @@ if __name__ == "__main__":
     VEC_STORE_DIR = os.path.join(PROJECT_ROOT, "vector_stores")
     SECRETS_FILE = os.path.join(PROJECT_ROOT, "secrets", "keys.env")
 
-    # ---------------------------------------------------------
-    # Initialize models
-    # ---------------------------------------------------------
+    ##############################################################
     api_key = config.get_api_key()
-
     embedding_model_name = "text-embedding-3-small"
     llm_name = "gpt-5.6-luna"
+    ##############################################################
 
-    embeddings = OpenAIEmbeddings(
+    emb = OpenAIEmbeddings(
         model=embedding_model_name,
         api_key=api_key,
     )
@@ -416,34 +439,44 @@ if __name__ == "__main__":
     )
 
     # --------------------------------------------------------
-    # Load vector stores
+    # Load vector store dict
     # --------------------------------------------------------
-    vector_stores = load_vector_stores(
+    vector_store_dict = load_vector_stores(
         vec_store_dir=VEC_STORE_DIR,
-        embeddings=embeddings,
+        emb_model=emb,
     )
 
     print(
         "Loaded vector stores:",
-        list(vector_stores.keys()),
+        list(vector_store_dict.keys()),
     )
 
 
+
+    ##########################################################
+    # --------------------------------------------------------
+    # Settings for the query loop
+    # --------------------------------------------------------
     search_vector_store_names = [
-        "patient_notes",
+        #"pat1",
+        #"pat2",
+        #"pat3",
+        #"pat4",
+        "pat5",
+        #"pat6",
         "icd10",
         "ccc_diag",
+        "ccc_interv",
+        "ccg",
     ]
     top_k = 5
+    include_history = True
+    ##########################################################
 
     history = []
 
-    query = """
-    The patient is having fever, coughing, and yellow mucus.
+    #query = "The patient is having fever, coughing, and yellow mucus. What diagnosis could explain the patient's symptoms, and which ICD-10 code is most relevant?"
 
-    What diagnosis could explain the patient's symptoms,
-    and which ICD-10 code is most relevant?
-    """
 
     # --------------------------------------------------------
     # Query loop
@@ -452,7 +485,7 @@ if __name__ == "__main__":
     print("Type 'exit' to quit.\n")
 
     while True:
-        query = input(">>> Question: ").strip()
+        query = input(">>> QUESTION: ").strip()
 
         if query.lower() in ["exit", "quit", "q"]:
             print("Stopping.")
@@ -470,28 +503,29 @@ if __name__ == "__main__":
         answer, results, rewritten_query = rag_q_and_a(
             query=query,
             vector_store_names=search_vector_store_names,
-            vector_stores=vector_stores,
+            vector_stores=vector_store_dict,
             llm=llm,
-            top_k=5,
+            top_k=top_k,
             history=history,
         )
 
-        print("\nRewritten index search query:")
+        print("\nREWRITTEN INDEX SEARCH QUERY:")
         print(rewritten_query)
 
-        print("\nAnswer:")
+        print("\nANSWER:")
         print(answer)
         print()
 
-        # ----------------------------------------------------
-        # Update conversation history
-        # ----------------------------------------------------
-        history.append({
-            "role": "user",
-            "content": query,
-        })
+        if include_history:
+            # ----------------------------------------------------
+            # Update conversation history
+            # ----------------------------------------------------
+            history.append({
+                "role": "user",
+                "content": query,
+            })
 
-        history.append({
-            "role": "assistant",
-            "content": answer,
-        })
+            history.append({
+                "role": "assistant",
+                "content": answer,
+            })

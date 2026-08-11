@@ -1,0 +1,154 @@
+"case_id","case_name","day","note_order","note_title","author","note_text"
+"6","Drug Induced Intoxication with Anxiety Attack","-28","1","Outpatient Psychiatry Follow-up","Consultant Psychiatrist","25-year-old woman with history of recurrent depressive disorder and substance misuse attends routine outpatient follow-up.
+Patient reports persistent depressive symptoms over recent months including low mood, reduced motivation, fatigue, impaired concentration, and intermittent sleep disturbance. She states that stress related to finances and personal relationships has contributed to worsening symptoms.
+Currently prescribed sertraline 100 mg daily. Reports generally good adherence although occasionally misses doses.
+Denies:
+- suicidal ideation
+- self-harm behavior
+- homicidal ideation
+- psychotic symptoms
+Mental State Examination:
+- Alert and oriented.
+- Appropriate appearance and hygiene.
+- Mood described as ""still quite low.""
+- Affect mildly restricted.
+- Speech normal rate and volume.
+- Thought processes coherent.
+- No hallucinations or delusions.
+Assessment: recurrent depressive disorder with partial response to SSRI therapy. Ongoing substance misuse remains a concern.
+Plan:
+- Continue sertraline 100 mg daily.
+- Encourage psychological therapy.
+- Discuss risks associated with recreational substance use.
+- Outpatient review in four weeks."
+"6","Drug Induced Intoxication with Anxiety Attack","-10","2","Community Mental Health Review","Psychiatric Nurse Specialist","Patient attended scheduled review.
+Reports increased anxiety related to work instability and social stressors.
+Acknowledges increasing recreational substance use during social occasions. States substances help her temporarily ""switch off"" from stress and negative thoughts.
+Patient remains ambivalent regarding formal addiction treatment.
+Mental state otherwise stable.
+Education provided regarding:
+- effects of substance misuse on mood disorders
+- medication adherence
+- healthy coping strategies
+Plan:
+- Continue psychiatric follow-up.
+- Encourage engagement with substance misuse services.
+- Provide community support resources."
+"6","Drug Induced Intoxication with Anxiety Attack","0","3","Emergency Medical Services Report","Paramedic","EMS dispatched to private residence following reports of severe anxiety and agitation.
+Friends report patient had consumed recreational psychoactive substances during a social gathering earlier in the evening.
+Upon arrival patient found sitting on floor, visibly distressed and hyperventilating.
+Patient repeatedly states: ""I can't breathe. My heart is racing.""
+Observations:
+- HR 140 bpm
+- BP 150/88 mmHg
+- RR 32/min
+- SpO₂ 99% RA
+Patient alert and responsive.
+No evidence of trauma.
+No witnessed seizure activity.
+Transported to Emergency Department for further assessment."
+"6","Drug Induced Intoxication with Anxiety Attack","0","4","Emergency Department Triage Note","Emergency Department Nurse","Patient arrived tearful, anxious, and restless.
+Complaints include:
+- severe anxiety
+- palpitations
+- tremor
+- chest tightness
+- feeling unable to control breathing
+Initial observations:
+- HR 138 bpm
+- BP 146/90 mmHg
+- RR 30/min
+- Temp 36.9°C
+- SpO₂ 100% RA
+Patient placed in monitored assessment bay.
+Supportive reassurance provided."
+"6","Drug Induced Intoxication with Anxiety Attack","0","5","Emergency Department Assessment","Emergency Physician","25-year-old woman presenting following recreational substance use.
+Past Medical History:
+- Recurrent depressive disorder.
+- Substance misuse.
+Medication:
+- Sertraline 100 mg daily.
+Physical Examination, Investigations, ECG, laboratory tests and toxicology reviewed.
+Assessment:
+- Acute drug-induced intoxication.
+- Anxiety attack secondary to intoxication.
+- No evidence of serotonin syndrome.
+- No evidence of acute cardiovascular emergency.
+Plan:
+- Intravenous fluids.
+- Observation and cardiac monitoring.
+- Repeat clinical assessment.
+- Psychiatry consultation once medically stabilized."
+"6","Drug Induced Intoxication with Anxiety Attack","0","6","Emergency Department Nursing Note (Afternoon)","Registered Nurse","Patient remains anxious but increasingly calm following supportive intervention.
+Observations show HR reduced to approximately 120 bpm and respiratory rate decreasing.
+Continues to seek reassurance regarding symptoms.
+Patient cooperative with treatment.
+Tolerating oral fluids.
+No aggressive behavior observed."
+"6","Drug Induced Intoxication with Anxiety Attack","0","7","Psychiatry Consultation","Consultation-Liaison Psychiatrist","Patient reviewed after improvement in acute intoxication symptoms.
+Reports using recreational substances socially.
+States episode was unintentional and not related to self-harm.
+Denies suicidal ideation, self-harm intent, homicidal ideation, and hallucinations.
+Mental State Examination: appearance appropriate, cooperative, anxious mood, logical thought processes, no perceptual abnormalities, fair insight.
+Assessment: substance-induced intoxication, anxiety attack triggered by intoxication, underlying recurrent depressive disorder, ongoing substance misuse.
+Plan: continue observation overnight, continue sertraline, addiction services referral, psychiatric follow-up."
+"6","Drug Induced Intoxication with Anxiety Attack","0","8","Observation Unit Nursing Note (Evening)","Registered Nurse","Patient transferred to observation unit.
+Anxiety significantly improved.
+Observations: HR 96 bpm, BP 124/80 mmHg, RR 18/min, SpO₂ 99% RA.
+Patient resting comfortably.
+Encouraged hydration and rest.
+No recurrence of panic symptoms."
+"6","Drug Induced Intoxication with Anxiety Attack","1","9","Observation Unit Progress Note","Internal Medicine Physician","Patient reviewed following overnight observation.
+Reports feeling tired but markedly improved.
+Denies chest pain, shortness of breath, palpitations, and ongoing panic symptoms.
+Physical examination unremarkable.
+Assessment: resolution of acute intoxication, significant improvement in anxiety symptoms, medically stable.
+Plan: continue observation, psychiatric review, addiction service consultation."
+"6","Drug Induced Intoxication with Anxiety Attack","1","10","Nursing Note (Morning)","Registered Nurse","Patient awake and cooperative.
+Eating breakfast independently.
+Reports mild fatigue and headache only.
+Mobilizing without difficulty.
+No acute concerns."
+"6","Drug Induced Intoxication with Anxiety Attack","1","11","Multidisciplinary Review","Consultant Psychiatrist","Patient reviewed jointly with nursing staff.
+Demonstrates increasing insight regarding role of substance misuse in current admission.
+Risk assessment: no suicidal ideation, no self-harm behavior, no psychosis, low immediate risk.
+Assessment: continuing clinical improvement; appropriate candidate for discharge if stability maintained.
+Plan: overnight observation, addiction services review tomorrow, anticipated discharge on Day 2."
+"6","Drug Induced Intoxication with Anxiety Attack","1","12","Evening Ward Progress Note","Psychiatry Registrar","Patient significantly improved compared with presentation but continues intermittent anxiety when reflecting on admission events.
+Denies suicidal ideation, self-harm thoughts, hallucinations, and further panic symptoms.
+Mental State Examination: alert, oriented, cooperative, mildly anxious affect, logical thought processes.
+Assessment: ongoing recovery following acute intoxication, residual situational anxiety, improving insight.
+Plan: continue observation overnight, addiction review tomorrow, discharge expected if stable."
+"6","Drug Induced Intoxication with Anxiety Attack","1","13","Ward Nursing Note (Evening)","Registered Nurse","Patient comfortable throughout evening.
+Observed reading and speaking with family by telephone.
+Eating and drinking adequately.
+Vitals stable: HR 78 bpm, BP 116/72 mmHg, SpO₂ 99% RA.
+No evidence of recurrent agitation or panic symptoms.
+Settled overnight without incident."
+"6","Drug Induced Intoxication with Anxiety Attack","2","14","Morning Medical Review","Internal Medicine Physician","Patient reports restful night and no recurrence of palpitations, tremor, chest discomfort, or severe anxiety.
+Physical examination unremarkable.
+Patient medically well and no longer demonstrates features of acute intoxication.
+Assessment: drug-induced intoxication fully resolved and medically fit for discharge.
+Plan: final psychiatric review, community follow-up arrangements, discharge today."
+"6","Drug Induced Intoxication with Anxiety Attack","2","15","Addiction Services Consultation","Addiction Medicine Specialist","Discussion focused on triggers for substance use, relationship between substance use and depressive symptoms, coping mechanisms for stress, and relapse prevention strategies.
+Patient acknowledges increasing substance use over previous months and expresses willingness to engage with outpatient support services.
+Plan: referral to community addiction treatment program, follow-up appointment scheduled, educational materials provided."
+"6","Drug Induced Intoxication with Anxiety Attack","2","16","Psychiatry Follow-up Assessment","Consultant Psychiatrist","Patient reviewed prior to discharge.
+Reports mood improved relative to admission and states: ""This experience scared me. I do not want to end up back here again.""
+Denies suicidal ideation, self-harm thoughts, hopelessness, and psychotic symptoms.
+Assessment: resolution of intoxication-related symptoms and acute anxiety attack; ongoing recurrent depressive disorder and substance misuse requiring outpatient management.
+Plan: continue sertraline 100 mg daily, community psychiatry follow-up, engagement with addiction services, discharge home."
+"6","Drug Induced Intoxication with Anxiety Attack","2","17","Discharge Summary","Consultant Psychiatrist","25-year-old woman admitted following acute drug-induced intoxication associated with recreational substance use.
+Hospital course notable for severe anxiety, hyperventilation, tremor, and tachycardia during intoxication. Symptoms improved with supportive care, observation, and multidisciplinary management.
+Final Diagnoses:
+- Drug-induced intoxication associated with substance misuse
+- Anxiety attack secondary to intoxication
+- Recurrent depressive disorder
+- Substance misuse disorder
+Discharge medication: Sertraline 100 mg once daily.
+Follow-up: community psychiatry review, substance misuse treatment services, psychological therapy, primary care follow-up."
+"6","Drug Induced Intoxication with Anxiety Attack","2","18","Discharge Nursing Note","Registered Nurse","Patient discharged home in stable condition.
+Alert, calm, and fully oriented.
+Mobilizing independently.
+Discharge education provided regarding medication adherence, mental health follow-up, substance misuse treatment, and recognition of warning symptoms.
+Patient verbalized understanding and left accompanied by a family member."

@@ -10,14 +10,14 @@ from src.utils import config
 
 
 def init_embedding_model(embedding_model_name, api_key):
-    embeddings = OpenAIEmbeddings(
+    emb_model = OpenAIEmbeddings(
         model=embedding_model_name,
         api_key=api_key,
     )
-    return embeddings
+    return emb_model
 
 
-def create_icd10_index(df, embeddings, save_path):
+def create_icd10_index(df, emb_model, save_path):
     texts = []
     metadatas = []
 
@@ -55,7 +55,7 @@ def create_icd10_index(df, embeddings, save_path):
 
     vector_store = FAISS.from_texts(
         texts=texts,
-        embedding=embeddings,
+        embedding=emb_model,
         metadatas=metadatas,
         distance_strategy=DistanceStrategy.MAX_INNER_PRODUCT,
     )
@@ -65,10 +65,10 @@ def create_icd10_index(df, embeddings, save_path):
     return vector_store
 
 
-def load_index(filepath, embeddings):
+def load_index(filepath, emb_model):
     vector_store = FAISS.load_local(
         filepath,
-        embeddings,
+        emb_model,
         allow_dangerous_deserialization=True,
     )
     return vector_store
@@ -96,19 +96,19 @@ if __name__ == "__main__":
     llm_name = "gpt-5.6-luna"
     ##############################################################
 
-    embeddings = init_embedding_model(embedding_model_name, api_key)
+    emb = init_embedding_model(embedding_model_name, api_key)
 
     # Read the ICD-10 taxonomy file
-    icd10_faiss_index_path = os.path.join(VEC_STORE_DIR, "icd10_faiss_index")
-
     icd10_df = pd.read_csv(os.path.join(data_resources_dir, "ICD10_clean.csv"), encoding="utf-8-sig")
+
+    icd10_faiss_index_path = os.path.join(VEC_STORE_DIR, "icd10_faiss_index")
 
 
     # Create ICD-10 vector store
-    #icd10_vector_store = create_icd10_index(df=icd10_df, embeddings=embeddings, save_path=icd10_faiss_index_path)
+    #create_icd10_index(df=icd10_df, emb_model=emb, save_path=icd10_faiss_index_path)
 
     # Load existing vector store
-    icd10_vector_store = load_index(filepath=icd10_faiss_index_path, embeddings=embeddings)
+    icd10_vector_store = load_index(filepath=icd10_faiss_index_path, emb_model=emb)
 
 
     query = "The patient slipped"
