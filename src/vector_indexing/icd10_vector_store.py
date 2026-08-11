@@ -38,19 +38,19 @@ def create_icd10_index(df, emb_model, save_path):
             "kind": kind,
             "parent_code": parent_code,
         }
-
+        """
         # Title only
         texts.append(title)
         metadatas.append({
             **metadata,
-            "content_type": "title",
+            #"content_type": "title",
         })
-
+        """
         # Code + title
         texts.append(f"{code}: {title}")
         metadatas.append({
             **metadata,
-            "content_type": "code--title",
+            #"content_type": "code--title",
         })
 
     vector_store = FAISS.from_texts(
