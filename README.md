@@ -36,9 +36,7 @@ scratch notebook.
 resulting folder to the top level of your Drive. Either `clinical_nlp_ails2026`
 or `clinical_nlp_ails2026-main` will be found automatically.
 
-### 2. Add your API key
-
-#### 2.a. [Alt.1] to Colab Secrets
+### 2. Add your API key to Colab Secrets
 Do **not** paste your key into a code cell.
 
 1. Click the **key icon** (🔑) in the Colab left sidebar to open *Secrets*.
@@ -49,11 +47,6 @@ Do **not** paste your key into a code cell.
 
 Secrets live on your Google account rather than in the notebook, so this stays
 private even if you share the file.
-
-#### 2.b. [Alt.2] to `secrets/key.env` file
-1. Create a folder on project root level named `secrets`
-2. Inside, create a file named `keys.env`
-3. Write in this file: `MY_API_KEY=`{your OpenAI API key (begins with `sk-`)}
 
 
 ### 3. Open the notebook from Drive
@@ -112,7 +105,7 @@ load once per session.
 
 ```bash
 pip install -r requirements.txt
-mkdir secrets && echo "OPENAI_API_KEY=sk-..." > secrets/keys.env
+mkdir secrets && echo "MY_API_KEY=sk-..." > secrets/keys.env
 jupyter notebook clinical_nlp_ails2026.ipynb
 ```
 
