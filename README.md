@@ -23,7 +23,7 @@ from google.colab import drive
 drive.mount('/content/drive')
 
 %cd /content/drive/MyDrive
-!git clone https://github.com/OWNER/REPO.git clinical_nlp_ails2026
+!git clone https://github.com/hansmoen/clinical_nlp_ails2026.git clinical_nlp_ails2026
 ```
 
 Approve the Drive authorisation popup when it appears. The download is about
