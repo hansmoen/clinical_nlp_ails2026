@@ -105,7 +105,7 @@ if __name__ == "__main__":
 
 
     # Create ICD-10 vector store
-    #create_icd10_index(df=icd10_df, emb_model=emb, save_path=icd10_faiss_index_path)
+    create_icd10_index(df=icd10_df, emb_model=emb, save_path=icd10_faiss_index_path)
 
     # Load existing vector store
     icd10_vector_store = load_index(filepath=icd10_faiss_index_path, emb_model=emb)

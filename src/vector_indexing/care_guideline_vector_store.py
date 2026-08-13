@@ -103,7 +103,7 @@ if __name__ == "__main__":
     ccg_df = pd.read_csv(os.path.join(data_resources_dir, "Care_guidelines.csv"), encoding="utf-8-sig")
 
     # Create Care Guideline vector store
-    #create_care_guideline_index(df=ccg_df, emb_model=emb, save_path=ccg_faiss_index_path)
+    create_care_guideline_index(df=ccg_df, emb_model=emb, save_path=ccg_faiss_index_path)
 
     # Load existing vector stores
     ccg_vector_store = load_index(filepath=ccg_faiss_index_path, emb_model=emb)

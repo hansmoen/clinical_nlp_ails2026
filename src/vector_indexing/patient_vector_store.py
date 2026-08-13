@@ -122,7 +122,7 @@ if __name__ == "__main__":
     pat5_faiss_index_path = os.path.join(VEC_STORE_DIR, "pat5_faiss_index")
     pat6_faiss_index_path = os.path.join(VEC_STORE_DIR, "pat6_faiss_index")
 
-    """
+
     # Create vector stores
     create_patient_notes_index(df=pat1_df, emb_model=emb, save_path=pat1_faiss_index_path)
     create_patient_notes_index(df=pat2_df, emb_model=emb, save_path=pat2_faiss_index_path)
@@ -130,7 +130,7 @@ if __name__ == "__main__":
     create_patient_notes_index(df=pat4_df, emb_model=emb, save_path=pat4_faiss_index_path)
     create_patient_notes_index(df=pat5_df, emb_model=emb, save_path=pat5_faiss_index_path)
     create_patient_notes_index(df=pat6_df, emb_model=emb, save_path=pat6_faiss_index_path)
-    """
+
 
     # Load existing vector stores
     patN_vector_store = load_index(filepath=pat4_faiss_index_path, emb_model=emb)

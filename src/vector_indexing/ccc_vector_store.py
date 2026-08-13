@@ -109,8 +109,8 @@ if __name__ == "__main__":
 
 
     # Create vector stores
-    #create_ccc_index(df=ccc_diag_df, emb_model=emb, save_path=ccc_diag_faiss_index_path, source=ccc_diag_source)
-    #create_ccc_index(df=ccc_interv_df, emb_model=emb, save_path=ccc_interv_faiss_index_path, source=ccc_interv_source)
+    create_ccc_index(df=ccc_diag_df, emb_model=emb, save_path=ccc_diag_faiss_index_path, source=ccc_diag_source)
+    create_ccc_index(df=ccc_interv_df, emb_model=emb, save_path=ccc_interv_faiss_index_path, source=ccc_interv_source)
 
     # Load existing vector stores
     ccc_diag_vector_store = load_index(filepath=ccc_diag_faiss_index_path, emb_model=emb)
